@@ -15,7 +15,7 @@ public interface ShipFactory {
   }
 
   private void sendEmailTo(String email, Ship ship){
-    System.out.println(ship.getName() + "다 만들었습니다.");
+    System.out.println(ship.getName() + " 다 만들었습니다.");
   };
 
   Ship createShip();
@@ -30,7 +30,7 @@ public interface ShipFactory {
   }
 
   private static void prepareFor(String name){
-    System.out.println(name + "만들 준비중");
+    System.out.println(name + " 만들 준비중");
   }
 
 }
