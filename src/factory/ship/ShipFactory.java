@@ -3,7 +3,6 @@ package factory.ship;
 public interface ShipFactory {
 
   default Ship orderShip(String name, String email){
-    // 공통적으로 처리하는 로직은 orderShip 에 두고 상세구현이 필요한 부분들에 한해 하위 클래스들에게 구현을 넘긴다.
     validate(name, email);
 
     prepareFor(name);

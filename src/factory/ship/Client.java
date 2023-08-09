@@ -6,6 +6,7 @@ public class Client {
     Client client = new Client();
     client.print(new WhiteShipFactory(), "whiteship", "grande@naver.com");
     client.print(new BlackShipFactory(), "blackship", "ariana@naver.com");
+    client.print(new MerchantShipFactory(), "merchantship", "merchant@naver.com");
   }
 
   private void print(ShipFactory shipFactory, String name, String email) {
