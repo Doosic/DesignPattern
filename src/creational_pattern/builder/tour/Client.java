@@ -1,6 +1,4 @@
-package creational_pattern.builder;
-
-import java.time.LocalDate;
+package creational_pattern.builder.tour;
 
 public class Client {
     public static void main(String[] args) {

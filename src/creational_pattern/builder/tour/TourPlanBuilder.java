@@ -1,4 +1,4 @@
-package creational_pattern.builder;
+package creational_pattern.builder.tour;
 
 import java.time.LocalDate;
 
