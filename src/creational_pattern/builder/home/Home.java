@@ -1,7 +1,6 @@
 package creational_pattern.builder.home;
 
 public class Home {
-
     private int walls;
     private int windows;
     private int doors;
@@ -11,41 +10,81 @@ public class Home {
     private boolean hasSwimPool;
     private boolean hasGarden;
 
-    public Home(int walls, int windows, int doors, int rooms) {
+    public int getWalls() {
+        return walls;
+    }
+
+    public void setWalls(int walls) {
         this.walls = walls;
+    }
+
+    public int getWindows() {
+        return windows;
+    }
+
+    public void setWindows(int windows) {
         this.windows = windows;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public void setDoors(int doors) {
         this.doors = doors;
+    }
+
+    public int getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(int rooms) {
         this.rooms = rooms;
     }
 
-    public Home(int walls, int windows, int doors, int rooms, boolean hasHeating) {
-        this.walls = walls;
-        this.windows = windows;
-        this.doors = doors;
-        this.rooms = rooms;
+    public boolean isHasHeating() {
+        return hasHeating;
+    }
+
+    public void setHasHeating(boolean hasHeating) {
         this.hasHeating = hasHeating;
     }
 
-    public Home(int walls, int windows, int doors, int rooms, boolean hasHeating, boolean hasGarage) {
-        this.walls = walls;
-        this.windows = windows;
-        this.doors = doors;
-        this.rooms = rooms;
-        this.hasHeating = hasHeating;
+    public boolean isHasGarage() {
+        return hasGarage;
+    }
+
+    public void setHasGarage(boolean hasGarage) {
         this.hasGarage = hasGarage;
     }
 
+    public boolean isHasSwimPool() {
+        return hasSwimPool;
+    }
 
+    public void setHasSwimPool(boolean hasSwimPool) {
+        this.hasSwimPool = hasSwimPool;
+    }
 
+    public boolean isHasGarden() {
+        return hasGarden;
+    }
 
-    //    public Home(int walls, int windows, int doors, int rooms, boolean hasHeating, boolean hasGarage, boolean hasSwimPool, boolean hasGarden) {
-//        this.walls = walls;
-//        this.windows = windows;
-//        this.doors = doors;
-//        this.rooms = rooms;
-//        this.hasHeating = hasHeating;
-//        this.hasGarage = hasGarage;
-//        this.hasSwimPool = hasSwimPool;
-//        this.hasGarden = hasGarden;
-//    }
+    public void setHasGarden(boolean hasGarden) {
+        this.hasGarden = hasGarden;
+    }
+
+    @Override
+    public String toString() {
+        return "Home{" +
+            "walls=" + walls +
+            ", windows=" + windows +
+            ", doors=" + doors +
+            ", rooms=" + rooms +
+            ", hasHeating=" + hasHeating +
+            ", hasGarage=" + hasGarage +
+            ", hasSwimPool=" + hasSwimPool +
+            ", hasGarden=" + hasGarden +
+            '}';
+    }
 }

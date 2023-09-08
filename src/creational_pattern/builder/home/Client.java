@@ -3,17 +3,10 @@ package creational_pattern.builder.home;
 public class Client {
 
     public static void main(String[] args) {
+        HomeDirector director = new HomeDirector(new DefaultHomeBuilder());
 
-//        Home home = new Home(
-//                4,
-//                4,
-//                1,
-//                2,
-//                true,
-//                true,
-//                false,
-//                true);
-
-
+        System.out.println(director.hasGardenHome());
+        System.out.println(director.hasSwimPoolHome());
+        System.out.println(director.hasHeatingHome());
     }
 }

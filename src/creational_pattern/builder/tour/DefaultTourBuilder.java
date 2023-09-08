@@ -52,4 +52,5 @@ public class DefaultTourBuilder implements TourPlanBuilder{
     public TourPlan getPlan() {
         return new TourPlan(title, nights, days, startDate, whereToStay, plans);
     }
+
 }
