@@ -8,7 +8,7 @@ public class HomeDirector {
     this.homeBuilder = homeBuilder;
   }
 
-  public Home hasGardenHome(){
+  public Home hasGardenDefaultHome(){
     return homeBuilder
         .hasGarden(true)
         .hasSwimPool(false)
@@ -21,20 +21,21 @@ public class HomeDirector {
         .build();
   }
 
-  public Home hasSwimPoolHome(){
+
+  public Home hasGardenModernHome(){
     return homeBuilder
-        .hasSwimPool(true)
+        .hasHeating(true)
+        .hasSwimPool(false)
         .hasGarden(false)
         .hasGarage(false)
-        .hasHeating(false)
-        .doors(6)
-        .rooms(4)
-        .windows(10)
-        .walls(8)
+        .doors(3)
+        .rooms(3)
+        .windows(12)
+        .walls(4)
         .build();
   }
 
-  public Home hasHeatingHome(){
+  public Home hasGardenVintageHome(){
     return homeBuilder
         .hasHeating(true)
         .hasSwimPool(false)
