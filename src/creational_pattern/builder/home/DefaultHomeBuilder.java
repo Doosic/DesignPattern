@@ -2,6 +2,7 @@ package creational_pattern.builder.home;
 
 public class DefaultHomeBuilder implements HomeBuilder{
 
+  private String name;
   private int walls;
   private int windows;
   private int doors;
@@ -10,6 +11,12 @@ public class DefaultHomeBuilder implements HomeBuilder{
   private boolean hasGarage;
   private boolean hasSwimPool;
   private boolean hasGarden;
+
+  @Override
+  public HomeBuilder name(String name) {
+    this.name = name + "(기본)";
+    return this;
+  }
 
   @Override
   public HomeBuilder walls(int walls) {
@@ -62,6 +69,7 @@ public class DefaultHomeBuilder implements HomeBuilder{
   @Override
   public Home build() {
     Home home = new Home();
+    home.setName(this.name);
     home.setWalls(this.walls);
     home.setRooms(this.rooms);
     home.setWindows(this.windows);

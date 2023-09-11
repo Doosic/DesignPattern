@@ -8,12 +8,11 @@ public class HomeDirector {
     this.homeBuilder = homeBuilder;
   }
 
-  public Home hasGardenDefaultHome(){
+
+  public Home hasGardenHome(){
     return homeBuilder
         .hasGarden(true)
-        .hasSwimPool(false)
-        .hasGarage(false)
-        .hasHeating(false)
+        .name("정원이 있는 집")
         .doors(5)
         .rooms(3)
         .windows(8)
@@ -22,12 +21,10 @@ public class HomeDirector {
   }
 
 
-  public Home hasGardenModernHome(){
+  public Home hasHeatingHome(){
     return homeBuilder
         .hasHeating(true)
-        .hasSwimPool(false)
-        .hasGarden(false)
-        .hasGarage(false)
+        .name("난방기가 있는 따뜻한 집")
         .doors(3)
         .rooms(3)
         .windows(12)
@@ -35,12 +32,10 @@ public class HomeDirector {
         .build();
   }
 
-  public Home hasGardenVintageHome(){
+  public Home hasSwimPoolHome(){
     return homeBuilder
-        .hasHeating(true)
-        .hasSwimPool(false)
-        .hasGarden(false)
-        .hasGarage(false)
+        .hasSwimPool(true)
+        .name("수영장이 있는 집")
         .doors(3)
         .rooms(3)
         .windows(12)

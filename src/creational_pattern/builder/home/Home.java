@@ -1,6 +1,8 @@
 package creational_pattern.builder.home;
 
 public class Home {
+
+    private String name;
     private int walls;
     private int windows;
     private int doors;
@@ -9,6 +11,14 @@ public class Home {
     private boolean hasGarage;
     private boolean hasSwimPool;
     private boolean hasGarden;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getWalls() {
         return walls;
@@ -77,7 +87,8 @@ public class Home {
     @Override
     public String toString() {
         return "Home{" +
-            "walls=" + walls +
+            "name='" + name + '\'' +
+            ", walls=" + walls +
             ", windows=" + windows +
             ", doors=" + doors +
             ", rooms=" + rooms +
